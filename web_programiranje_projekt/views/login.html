@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+  <style>
+   
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+    .wrapper {
+      max-width: 350px;
+      width: 100%;
+      background-color: #fff;
+      padding: 25px 30px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    .wrapper .title {
+      font-size: 25px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .wrapper form .field {
+      margin-bottom: 15px;
+    }
+    .wrapper form .field label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+    .wrapper form .field input[type="text"],
+    .wrapper form .field input[type="password"] {
+      height: 45px;
+      width: 100%;
+      outline: none;
+      font-size: 16px;
+      border-radius: 5px;
+      padding-left: 15px;
+      border: 1px solid #ccc;
+      transition: all 0.3s ease;
+    }
+    .wrapper form .field input[type="text"]:focus,
+    .wrapper form .field input[type="password"]:focus {
+      border-color: #9b59b6;
+    }
+    .wrapper form .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .wrapper form .content .checkbox {
+      display: flex;
+      align-items: center;
+    }
+    .wrapper form .content .checkbox input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    .wrapper form .content .pass-link {
+      font-size: 16px;
+    }
+    .wrapper form .field input[type="submit"] {
+      height: 45px;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+    .wrapper form .field input[type="submit"]:hover {
+      background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    }
+    .wrapper .signup-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .wrapper .signup-link a {
+      color: #9b59b6;
+      text-decoration: none;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title">Login Form</div>
+    <form form id="login-form">
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="content">
+        <div class="checkbox">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="pass-link">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+      <div class="field">
+        <input type="submit" value="Login">
+      </div>
+      <div class="signup-link">
+        Not a member? <a href="#">Signup now</a>
+        <div id="message"></div>
+      </div>
+    </form>
+  </div>
+  <script type='text/javascript' src="../js/script.js" ></script>
+</body>
+</html>
